@@ -1,7 +1,7 @@
 # Libraries
 
 - TailwindCss
-- Heroicons vue
+- Lucide vue icons
 
 ## Project Setup
 
