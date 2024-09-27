@@ -2,7 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
 #app {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #121212;
+  color-scheme: dark;
+}
+
+:root{
+  --colors-slate-50: 210 36% 97%;
+  --colors-slate-100: 210 38% 95%;
+  --colors-slate-200: 211 27% 90%;
+  --colors-slate-300: 211 23% 80%;
+  --colors-slate-400: 213 19% 65%;
+  --colors-slate-500: 215 20% 50%;
+  --colors-slate-600: 215 28% 39%;
+  --colors-slate-700: 215 30% 28%;
+  --colors-slate-800: 217 33% 17%;
+  --colors-slate-900: 222 47% 10%;
+  --colors-slate-950: 222 85% 4%;
+
+  --border-subtle: var(--colors-slate-300);
+  --bg-default: var(--colors-slate-100);
+  --bg-subtle: var(--colors-slate-200);
+  --text-default: var(--colors-slate-700);
+  --text-subtle: var(--colors-slate-500);
+}
+
+.dark {
+  --border-subtle: var(--colors-slate-700);
+  --bg-default: var(--colors-slate-900);
+  --bg-subtle: var(--colors-slate-800);
+  --text-default: var(--colors-slate-200);
+  --text-subtle: var(--colors-slate-300);
 }
